@@ -14,3 +14,8 @@ https://freefrontend.com/bootstrap-galleries/
 
 https://www.codehim.com/portfolio/jquery-portfolio-gallery-with-categories-filter/
 
+
+CSS SLIDER
+https://codepen.io/andrewchaika/pen/mEqRPz
+
+
