@@ -1,0 +1,170 @@
+
+
+<html>
+
+<head>
+    <!-- Bootstrap core CSS -->
+    <link href="/slide_show/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="/slide_show/assets/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
+    <link href="/slide_show/assets/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
+
+
+    <!-- Custom fonts for this template -->
+    <link href="/slide_show/css/all.min.css" rel="stylesheet">
+    <link href="/slide_show/css/owl.carousel.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/slide_show/css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/slide_show/js/ajax/jquery/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+
+    <section class="home-slider">
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="item-content" style='background-image: url(assets/img/portfolio/portfolio-1.jpg)'>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="http://google.com" class="btn blue-btn">
+                                    Button_1
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-content" style='background-image: url(assets/img/portfolio/portfolio-2.jpg)'>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="http://google.com" class="btn blue-btn">
+                                    Button_2
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+
+    <script src="/slide_show/js/MyJavaScript.js"></script>
+    <script src="/slide_show/js/jquery.js"></script>
+    <script src="/slide_show/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/slide_show/assets/plugins/bootstrap-modal/js/bootstrap-modalmanager.js"></script>
+    <script src="/slide_show/assets/plugins/bootstrap-modal/js/bootstrap-modal.js"></script>
+
+    <script src="/slide_show/js/owl.carousel.min.js"></script>
+
+
+
+    <script type="text/javascript">
+
+        $('.home-slider .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            dots: true,
+            items: 1
+        })
+
+        $('.deals-and-bundles-slider .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                767: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <script type="text/javascript">
+        var selector = '.lang-tab a';
+
+        $(selector).on('click', function () {
+            $(selector).removeClass('active');
+            $(this).addClass('active');
+        });
+    </script>
+
+    <script type="text/javascript">
+        var btn = $('#back-to-top-button');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+        $(window).scroll(function () {
+            console.log($(window).scrollTop())
+            if ($(window).scrollTop() > 63) {
+                $('.navbar').addClass('navbar-fixed');
+            }
+            if ($(window).scrollTop() < 64) {
+                $('.navbar').removeClass('navbar-fixed');
+            }
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+
+
+</body>
+</html>

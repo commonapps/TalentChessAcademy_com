@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\help_files\\bootstrap-carousel-fullscreen\\full-width",
-    "\\help_files\\bootstrap-carousel-fullscreen\\full-width\\assets",
-    "\\help_files\\bootstrap-carousel-fullscreen\\full-width\\assets\\js"
+    "\\assets",
+    "\\assets\\js",
+    "\\slide_show",
+    "\\slide_show\\assets",
+    "\\slide_show\\js"
   ],
+  "SelectedNode": "\\slide_show\\js\\jquery.js",
   "PreviewInSolutionExplorer": false
 }
