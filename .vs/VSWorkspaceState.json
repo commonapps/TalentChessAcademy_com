@@ -2,11 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\js",
-    "\\slide_show",
-    "\\slide_show\\assets",
-    "\\slide_show\\js"
+    "\\assets\\slider_images"
   ],
-  "SelectedNode": "\\slide_show\\js\\jquery.js",
   "PreviewInSolutionExplorer": false
 }
